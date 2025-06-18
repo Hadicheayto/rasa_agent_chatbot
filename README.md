@@ -57,9 +57,7 @@ The assistant is connected to WhatsApp via Twilio, allowing users to chat direct
 - Message delivery reports
 - WhatsApp-approved chatbot compliance
 
- ![IMG_7774](https://github.com/user-attachments/assets/6fdf8eb0-f3ed-43f6-98f5-209c342a8b15)
-
-
+ ![IMG_77742](https://github.com/user-attachments/assets/0298b5ac-33df-4d49-a74e-69278fead9d5)
 
 ### ✅ Web Chat Widget using Socket.IO
 A custom web-based chat widget is embedded on the university's website using `rasa-webchat`, which communicates with the bot via `Socket.IO`. This allows students to ask questions directly through the site without needing any external app.
