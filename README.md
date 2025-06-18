@@ -27,7 +27,7 @@ The goal of this assistant is to:
 
 The assistant is trained using a custom Rasa NLU pipeline, combining classical NLP techniques with deep learning models:
 
-```yaml
+
 pipeline:
   - name: SpacyNLP
     model: "en_core_web_sm"
@@ -44,7 +44,7 @@ pipeline:
   - name: FallbackClassifier
     threshold: 0.4
     ambiguity_threshold: 0.1
-```yaml
+
 
 ## 🔌 Integrations
 
