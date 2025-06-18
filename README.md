@@ -57,7 +57,8 @@ The assistant is connected to WhatsApp via Twilio, allowing users to chat direct
 - Message delivery reports
 - WhatsApp-approved chatbot compliance
 
-  ![image](https://github.com/user-attachments/assets/8bdd9502-b69d-4c57-a1f0-55b8390205a2)
+ ![IMG_7774](https://github.com/user-attachments/assets/6fdf8eb0-f3ed-43f6-98f5-209c342a8b15)
+
 
 
 ### ✅ Web Chat Widget using Socket.IO
