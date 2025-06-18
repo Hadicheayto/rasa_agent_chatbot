@@ -1,0 +1,73 @@
+
+
+File	    Purpose
+-----       -------
+domain.yml	Defines intents, entities, slots, responses, actions
+nlu.yml	    Provides training examples for each intent , (when each intent is triggered)
+stories.yml	Defines how the bot should respond to sequences of intents (to connect intent to response)
+rules.yml	Defines static one-turn behavior (e.g., always respond with X when Y is said)
+
+
+
+Intents don't automatically trigger responses in Rasa.
+
+You must specify how the assistant should behave when it recognizes an intent.
+
+So even if a user's message is correctly classified as greet, Rasa won’t know what to do unless:
+
+You define a rule (deterministic reaction)
+
+OR define a story (context-aware conversation)
+
+
+credentiels file:
+-----------------
+credentiels file: to integrated the chatbot with other systems
+
+
+LLM:
+----
+rasa use LLM by connecting to it in the pipeline by using : name: DIETClassifier
+
+
+entities and slot:
+------------------
+Entities are extracted from user messages by your NLU model.
+Then, through your dialogue management (stories, rules, or forms), you assign the entity value to a slot (e.g., course_name).
+Later in your action, you just read that slot instead of parsing entities again.
+
+slots are memory location where we can store data for a long period of time
+
+Why use slots? 
+-Slots hold state across multiple turns in the conversation.
+
+-For example, the user might say:
+
+    User: "Tell me about Machine Learning."
+
+    Rasa extracts entity course_name=Machine Learning, sets the slot course_name.
+
+    Action reads the slot, responds with details.
+
+-If the user follows up with:
+
+    User: "What about Deep Learning?"
+
+    Slot updates to Deep Learning, action again reads it and replies.
+
+Slots help your bot remember important info throughout the chat, which is essential for more complex interactions.
+
+
+
+commands lines:
+---------------
+rasa train
+rasa shell
+rasa shell --debug
+rasa shell nlu
+rasa run actions
+rasa interactive
+rasa run --enable-api
+rasa run --enable-api --cors "*" --debug   // to allow rasa to receive message from outside (cross origin ressource sharing)
+rasa run -m models --enable-api --cors "*"
+rasa run -m models --enable-api --cors "*" --debug --port 5005

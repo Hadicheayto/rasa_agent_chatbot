@@ -1,0 +1,20 @@
+{
+  "0": "ask_admission",
+  "1": "ask_application_deadlines",
+  "2": "ask_campus_location",
+  "3": "ask_class_schedule",
+  "4": "ask_course_details",
+  "5": "ask_courses",
+  "6": "ask_credits",
+  "7": "ask_duration",
+  "8": "ask_internship",
+  "9": "ask_language_of_instruction",
+  "10": "ask_price",
+  "11": "ask_program_format",
+  "12": "ask_program_summary",
+  "13": "ask_semesters",
+  "14": "goodbye",
+  "15": "greet",
+  "16": "negative_reaction",
+  "17": "positive_reaction"
+}

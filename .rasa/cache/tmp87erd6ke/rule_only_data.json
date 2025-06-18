@@ -1,0 +1,6 @@
+{
+  "rule_only_slots": [],
+  "rule_only_loops": [
+    "admission_interest_form"
+  ]
+}

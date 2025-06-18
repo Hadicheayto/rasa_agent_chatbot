@@ -1,0 +1,146 @@
+version: '3.1'
+intents:
+- Register_now
+- ask_about_summer
+- ask_admission
+- ask_application_deadlines
+- ask_campus_location
+- ask_class_schedule
+- ask_course_details
+- ask_courses
+- ask_credits
+- ask_duration
+- ask_financial_aid_percentage
+- ask_instructors
+- ask_internship
+- ask_job_opportunities
+- ask_language_of_instruction
+- ask_price
+- ask_program_summary
+- ask_semesters
+- bot_challenge
+- goodbye
+- greet
+- inform
+- negative_reaction
+- positive_reaction
+- ask_thesis_and_research
+- ask_program_format
+entities:
+- first_name
+- email
+- course_name
+slots:
+  course_name:
+    type: text
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: course_name
+  first_name:
+    type: text
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: first_name
+      conditions:
+      - active_loop: simple_form
+        requested_slot: first_name
+  email:
+    type: text
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: email
+forms:
+  simple_form:
+    required_slots:
+    - first_name
+    - email
+responses:
+  utter_greet:
+  - text: Hi! I'm the USJ AI Master's chatbot 🤖. Ask me anything about the program!
+  utter_goodbye:
+  - text: Goodbye! Feel free to come back with more questions.
+  utter_ask_duration:
+  - text: The AI Master's program at USJ lasts for 2 years.
+  utter_ask_semesters:
+  - text: The program is divided into 4 semesters each year 2 semesters
+  utter_ask_credits:
+  - text: The total number of required credits is 120.
+  utter_ask_courses:
+  - text: |-
+      The courses are:
+      1-Machine Learning
+      2-Deep Learning
+      3-NLP
+      4-Data Mining
+      5-Computer Vision
+      6-Reinforcement Learning
+      7-game theory
+      8-optimisation for ai
+  utter_ask_admission:
+  - text: |-
+      The program start in september To apply, you need a Bachelor's degree in Computer Science or related field
+      and a gpa grater than 3
+      To enroll in the master fill the application on this link: www.usjai.com
+      you can send 'Register now' to reserve your spot now.
+  utter_iamabot:
+  - text: I am a bot, powered by Rasa.
+  utter_ask_price:
+  - text: |-
+      The price is by credit: 1 credit cost 200$
+      total number of required credits is 120
+      120 x 200$ = 24,000$
+      so the total master's cost 24000$
+  utter_happy_response:
+  - text: We're happy to hear that! 😊
+  utter_aid_info:
+  - text: We understand! You can apply for social aid at the university to get a discount.
+  utter_ask_internship:
+  - text: Yes, the program includes a mandatory internship that lasts around 3 to 6 months. The university partners with several companies to help students find suitable internships, and you can also seek opportunities independently. Internships can be paid or unpaid depending on the company.
+  utter_ask_language_of_instruction:
+  - text: The AI master's program is primarily taught in English to prepare students for international careers. Applicants whose native language is not English Some support classes are offered to improve academic English.
+  utter_ask_application_deadlines:
+  - text: The application deadline for the AI master's program is June 30th. Late applications may be considered on a case-by-case basis if spots remain. Admissions results are typically sent within four weeks after the deadline.
+  utter_ask_class_schedule:
+  - text: Classes are generally scheduled Monday to Friday between 4 PM and 9 PM. each course duration is 75 min, Most courses include lectures and lab sessions. Attendance is encouraged but some lectures are recorded for later review.
+  utter_ask_campus_location:
+  - text: This masters is available at the esib campus in mansouriye mar roukoz. Prospective students are welcome to visit—check our website for open day information!
+  utter_ask_program_summary:
+  - text: |-
+      This is an AI Master's program that has a duration of 2 years, with 2 semesters each year.
+      The program is taught in English.
+      It is designed to prepare you directly for the job market, helping you find employment upon graduation.
+  utter_ask_first_name:
+  - text: What's your first name?
+  utter_ask_email:
+  - text: Please enter your email address?
+  utter_submit_registration_form:
+  - text: Thanks {first_name}! We've recorded your interest and we will reserve your place in the program. We'll contact you at {email} to proceed in you application.
+  utter_ask_financial_aid_percentage:
+  - text: Yes, social aid at USJ can cover up to 70% depending on your eligibility. Make sure to apply early and provide the necessary documents!
+  utter_ask_instructors:
+  - text: The program is taught by experienced professors from ESIB and other faculties, with both academic and industry expertise in AI, ML, and data science.
+  utter_ask_job_opportunities:
+  - text: Graduates can pursue careers as Machine Learning Engineers, Data Scientists, AI Researchers, Computer Vision Specialists, NLP Engineers, and more.
+  utter_ask_about_summer:
+  - text: No, the program does not include summer semesters.
+  utter_default:
+  - text: "Sorry I didn't quite understand that. Could you please rephrase your question and make sure it's related to the program? Note: Some information may not be included.)"
+  utter_ask_thesis_and_research:
+  - text: >-
+      Yes, the AI Master's program includes a mandatory research thesis during the final semester.
+      Students will work on a topic related to Artificial Intelligence under the supervision of a faculty advisor.
+      The thesis includes a written report and an oral defense.
+      You may also publish your work or collaborate with companies for applied research projects.
+  utter_ask_program_format:
+  - text: The AI Master's program at USJ is currently offered **in-person** at the ESIB campus in Mansourieh. Some courses are given online.
+actions:
+- action_say_data
+- action_course_details
+- validate_simple_form
+- action_default_fallback
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

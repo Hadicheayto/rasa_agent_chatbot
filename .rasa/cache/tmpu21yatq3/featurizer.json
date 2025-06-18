@@ -1,0 +1,90 @@
+{
+  "type": "MaxHistoryTrackerFeaturizer",
+  "state_featurizer": {
+    "action_texts": [],
+    "entity_tag_specs": [],
+    "feature_states": {
+      "intent": {
+        "Register_now": 0,
+        "ask_admission": 1,
+        "ask_application_deadlines": 2,
+        "ask_campus_location": 3,
+        "ask_class_schedule": 4,
+        "ask_course_details": 5,
+        "ask_courses": 6,
+        "ask_credits": 7,
+        "ask_duration": 8,
+        "ask_internship": 9,
+        "ask_language_of_instruction": 10,
+        "ask_price": 11,
+        "ask_program_format": 12,
+        "ask_program_summary": 13,
+        "ask_semesters": 14,
+        "back": 15,
+        "bot_challenge": 16,
+        "goodbye": 17,
+        "greet": 18,
+        "inform": 19,
+        "negative_reaction": 20,
+        "nlu_fallback": 21,
+        "out_of_scope": 22,
+        "positive_reaction": 23,
+        "restart": 24,
+        "session_start": 25
+      },
+      "action_name": {
+        "action_listen": 0,
+        "action_restart": 1,
+        "action_session_start": 2,
+        "action_default_fallback": 3,
+        "action_deactivate_loop": 4,
+        "action_revert_fallback_events": 5,
+        "action_default_ask_affirmation": 6,
+        "action_default_ask_rephrase": 7,
+        "action_two_stage_fallback": 8,
+        "action_unlikely_intent": 9,
+        "action_back": 10,
+        "...": 11,
+        "action_extract_slots": 12,
+        "action_course_details": 13,
+        "action_say_data": 14,
+        "utter_aid_info": 15,
+        "utter_ask_admission": 16,
+        "utter_ask_application_deadlines": 17,
+        "utter_ask_campus_location": 18,
+        "utter_ask_class_schedule": 19,
+        "utter_ask_courses": 20,
+        "utter_ask_credits": 21,
+        "utter_ask_duration": 22,
+        "utter_ask_email": 23,
+        "utter_ask_full_name": 24,
+        "utter_ask_internship": 25,
+        "utter_ask_language_of_instruction": 26,
+        "utter_ask_price": 27,
+        "utter_ask_program_format": 28,
+        "utter_ask_program_summary": 29,
+        "utter_ask_semesters": 30,
+        "utter_goodbye": 31,
+        "utter_greet": 32,
+        "utter_happy_response": 33,
+        "utter_iamabot": 34,
+        "utter_submit_registration_form": 35,
+        "Simple_form": 36
+      },
+      "entities": {
+        "course_name": 0,
+        "email": 1,
+        "full_name": 2
+      },
+      "slots": {
+        "full_name_0": 0,
+        "email_0": 1
+      },
+      "active_loop": {
+        "Simple_form": 0
+      }
+    }
+  },
+  "remove_duplicates": true,
+  "max_history": 5
+}

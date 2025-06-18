@@ -1,0 +1,535 @@
+version: "3.1"
+nlu:
+- intent: Register_now
+  examples: |
+    - Register now
+    - register now
+    - register me
+- intent: inform
+  examples: |
+    - [Hadi](first_name)
+    - My name is [Hadi](first_name)
+    - I'm [aya](first_name)
+    - You can call me [Hadi](first_name)
+    - [Fatima](first_name)
+    - My name is [Jad Nasrallah](first_name)
+    - It's [Sara](first_name)
+    - [Elie](first_name) is my name
+    - I go by [Lina](first_name)
+    - The name's [Omar](first_name)
+    - [mohamad](first_name)
+    - [cynthia](first_name)
+    - [hadi.ch.2003@gmail.com](email)
+    - My email is [hadi.ch.2003@gmail.com](email)
+    - You can email me at [sara.ay@gmail.com](email)
+    - Reach me at [omar.d@gmail.com](email)
+    - Send info to [jad.nasr@gmail.com](email)
+    - Here’s my email: [fatima.k@hotmail.com](email)
+    - [elie.h@usj.edu](email) is my university email
+    - Drop it at [lina.rizk23@yahoo.com](email)
+    - I use [khalil.m@protonmail.com](email) for school
+    - [mariah.j@example.com](email)
+    - [jean](first_name)
+    - [marianne](first_name)
+    - [ali](first_name)
+    - [mohamad@gmail.com][{"entity": "email"}, {"entity": "email"}]
+- intent: bot_challenge
+  examples: |
+    - Are you a bot?
+    - Are you a human?
+    - Is this a real person?
+    - Am I talking to a human?
+    - Am I chatting with a bot?
+    - You're a bot, right?
+    - Are you real?
+    - Are you an AI?
+    - Are you just a computer?
+    - Is this automated?
+    - Is this a chatbot?
+    - Who am I chatting with?
+    - Is this a real conversation?
+    - Are you alive?
+    - Is this AI?
+    - Are you intelligent?
+    - You sound like a robot.
+    - Are you human or machine?
+    - I think you’re a bot.
+    - Be honest, are you a bot?
+    - bot?
+    - who are you?
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+- intent: ask_duration
+  examples: |
+    - How long does the AI master's take to complete?
+    - how long is the program?
+    - What’s the length of the program?
+    - Duration of the AI master’s degree?
+    - Is this a 1-year or 2-year program?
+    - How many months is the AI master?
+    - Does the program last one year?
+    - Total time needed to finish the master’s?
+    - Is the master’s full-time or part-time?
+    - Can I complete it in 12 months?
+    - How many academic years does it cover?
+    - duration?
+    - what about the duration of this program?
+- intent: ask_semesters
+  examples: |
+    - How many semesters are there?
+    - Is the program divided into semesters?
+    - Does it have 2 or 3 semesters?
+    - Number of terms in the AI master?
+    - How many semesters per year?
+    - Is it a 4-semester program?
+    - Total semesters required?
+    - How is the academic year structured?
+    - Semester breakdown of the master’s?
+    - semester?
+    - how many semester in each year?
+- intent: ask_credits
+  examples: |
+    - how many credits are required?
+    - total credits in the master's?
+    - How many ECTS credits are needed?
+    - What’s the total credit load?
+    - Credit requirements for graduation?
+    - Is it a 60-credit or 120-credit program?
+    - How many credits per semester?
+    - Minimum credits to complete the master’s?
+    - Are there optional credits?
+    - Credit distribution between courses?
+    - Can I transfer external credits?
+    - How many credits is the thesis worth?
+    - credits?
+- intent: ask_courses
+  examples: |
+    - what courses are included?
+    - list all the courses
+    - what are the available courses?
+    - show me the courses in this master's
+    - what courses does this program offer?
+    - can I see the course list?
+    - which courses are offered?
+    - courses included in the program?
+    - I want to know the courses
+    - what are the courses required for this master?
+    - courses?
+- intent: ask_course_details
+  examples: |
+    - What is [machine learning](course_name)?
+    - Tell me about [deep learning](course_name)
+    - Tell me about [DL](course_name)
+    - Do you offer [data mining](course_name)?
+    - Can you explain [nlp](course_name)?
+    - I’m interested in [computer vision](course_name)
+    - Is [reinforcement learning](course_name) part of the program?
+    - Tell me about [game theory](course_name)
+    - What is covered in [nlp](course_name)?
+    - Is [computer vision](course_name) included?
+    - What’s taught in [data mining](course_name)?
+    - Does the program include [game theory](course_name)?
+    - what is the content of the course [machine learning](course_name)?
+    - what does this course [reinforcement learning](course_name) include?
+    - what is taught in the course of [data mining](course_name)?
+    - what is taught in [deep learning](course_name)?
+- intent: ask_admission
+  examples: |
+    - how can i apply?
+    - what are the requirements to apply?
+    - how do I get accepted?
+    - What GPA is required?
+    - Do I need a bachelor’s in CS?
+    - Are there entrance exams?
+    - Is work experience mandatory?
+    - What documents should I submit?
+    - Are recommendation letters needed?
+    - Is there an interview process?
+    - Minimum IELTS/TOEFL score?
+    - Can I apply without a tech background?
+    - Are there prerequisite courses?
+    - What do we need to access this program?
+    - What are the entry requirements?
+    - How can I qualify for this program?
+    - What conditions must I meet to join?
+    - What's needed to enroll in this master's?
+    - Admission criteria for this program?
+    - What are the eligibility conditions?
+    - What are the must-haves for application?
+    - What qualifications do I need?
+    - when this program starts?
+    - are there any requirement to enter the program?
+    - apply?
+    - admission?
+- intent: ask_price
+  examples: |
+    - How much does the program cost?
+    - What is the tuition fee?
+    - Tell me the price of the master's
+    - credit price?
+    - What’s the total program cost?
+    - Tuition fee per semester?
+    - are there additional fees?
+    - Is there a payment plan?
+    - Cost for international students?
+    - Does the price include materials?
+    - Are scholarships available?
+    - How much is the application fee?
+    - Is there a discount for early payment?
+    - Can I pay in installments?
+    - price?
+- intent: positive_reaction
+  examples: |
+    - That's a good price
+    - Nice
+    - cool
+    - Affordable
+    - That's not bad
+    - waw
+    - Great price!
+    - That’s reasonable.
+    - Perfect, thanks!
+    - I like the cost.
+    - Good value for money.
+    - That’s within my budget.
+    - Sounds fair.
+    - Not bad at all.
+    - I’m happy with this.
+    - Affordable for me.
+- intent: negative_reaction
+  examples: |
+    - Oof that's expensive
+    - That's not affordable
+    - Too much
+    - I can't pay that
+    - It's expensive
+    - ouf
+    - That’s too high.
+    - Way over my budget.
+    - Unaffordable for me.
+    - I expected it to be cheaper.
+    - This is expensive.
+    - Can’t afford this.
+    - Too costly.
+    - Not worth the price.
+    - Are there cheaper options?
+    - This is beyond my means.
+- intent: ask_internship
+  examples: |
+    - Is there an internship included?
+    - Do students have to do an internship?
+    - Are internships mandatory for graduation?
+    - Where can I do my internship?
+    - Does the university help find internships?
+    - What kind of internships are offered?
+    - Can I do an internship abroad?
+    - How long does the internship last?
+    - Are internships paid or unpaid?
+    - Can I choose the company for my internship?
+    - internship?
+    - required internship?
+- intent: ask_language_of_instruction
+  examples: |
+    - What language is the program taught in?
+    - Is the master’s in English or French?
+    - Can I study if I don’t speak English?
+    - Are there language requirements?
+    - Are classes bilingual?
+    - Is the thesis written in English?
+    - Do I need TOEFL or IELTS scores?
+    - Are there language support classes?
+    - Can I attend if I only speak French?
+    - What is the primary language for exams?
+    - what laguage?
+    - which language?
+    - language?
+- intent: ask_application_deadlines
+  examples: |
+    - When is the application deadline?
+    - What’s the last date to apply?
+    - Is there an early application deadline?
+    - Can I apply after the deadline?
+    - When do admissions close?
+    - When will I get my admission results?
+    - Are late applications accepted?
+    - Is there a rolling admission process?
+    - When does the next intake start?
+    - Can I defer my admission?
+    - deadline?
+    - admission deadline?
+    - deadline of application
+- intent: ask_class_schedule
+  examples: |
+    - What is the weekly class schedule?
+    - Are classes on weekdays or weekends?
+    - How many hours per week are classes?
+    - Do I have classes in the evening?
+    - Can I get a timetable of the courses?
+    - Are classes recorded for later viewing?
+    - Is attendance mandatory?
+    - How many courses are taken each semester?
+    - Are there lab sessions or only lectures?
+    - How flexible is the schedule?
+    - What time do classes usually start?
+    - Are there morning or afternoon sessions?
+    - When does the first class of the day begin?
+    - Are evening classes available after 6 PM?
+    - What's the typical end time for lectures?
+    - How long is each course session?
+    - Is there a lunch break between classes?
+    - Are courses scheduled back-to-back?
+    - What's the earliest class time offered?
+    - Are lab sessions held at the same time as lectures?
+    - What about the schedule?
+    - Can you tell me about the schedule?
+    - How does the schedule look?
+    - What’s the program schedule?
+    - Tell me about the class timings.
+    - When are the classes scheduled?
+    - What’s the timetable for the program?
+    - Could you explain the class schedule?
+    - How is the course schedule organized?
+    - What does the schedule look like?
+    - I want to know about the class schedule.
+    - What time are classes usually held?
+    - When do classes take place?
+    - Can you give me details on the schedule?
+    - class schedule?
+    - calender?
+    - do you have calender?
+- intent: ask_campus_location
+  examples: |
+    - Where is the university located?
+    - What city is the campus in?
+    - Can you tell me about the campus?
+    - Is the campus in an urban or rural area?
+    - What's around the university?
+    - Is housing available near campus?
+    - How do I get to the campus?
+    - Is the campus easy to access by public transport?
+    - What facilities does the campus offer?
+    - Can I visit the campus before applying?
+    - In which campus is this program taught?
+    - Where exactly is this program located?
+    - Which campus hosts the AI master's?
+    - Is the program offered on main campus?
+    - Are classes held at downtown campus?
+    - Do I need to go to north or south campus?
+    - Is there more than one campus location?
+    - Where will my classes be physically?
+    - Campus location for computer science programs?
+    - Is this program available at satellite campuses?
+    - Can I take classes at different campuses?
+    - What's the address of the teaching location?
+    - Which building hosts AI classes?
+    - Are all courses in one campus building?
+    - Is there shuttle service between campuses?
+    - in which campus is this program?
+    - location?
+    - campus location?
+    - program location?
+- intent: ask_program_summary
+  examples: |
+    - tell me about this program
+    - give me a summary about the program
+    - what is this master's about?
+    - overview of the program
+    - describe the AI master's
+    - what will I learn in this program?
+    - can you summarize the curriculum?
+    - what makes this program special?
+    - key features of this master's
+    - what should I know about this degree?
+    - program highlights
+    - what does this program focus on?
+    - explain this master's program to me
+    - what are the main topics covered?
+    - what kind of education will I get?
+    - what's unique about this program?
+    - what are the program objectives?
+    - what skills will I gain?
+    - what's the vision of this program?
+    - what can you tell me about this degree?
+    - describe what the program offers
+    - what's the big picture of this master's?
+    - what are the learning outcomes?
+    - what's the program philosophy?
+    - give me details about this program
+    - I want details on the program content
+    - provide an overview of the program content
+    - tell me everything about this program's structure
+    - program summary?
+    - summary?
+    - master summary?
+    - program?
+    - ai program?
+    - master ai?
+    - master program?
+- intent: ask_financial_aid_percentage
+  examples: |
+    - can the discount go up to 70%?
+    - is it possible to get 70% financial aid?
+    - can I get more than 50% off?
+    - what’s the maximum discount available?
+    - can I apply for a 70 percent grant?
+    - is 70 percent support possible?
+    - what is the highest amount of financial help I can get?
+    - can financial support reach 70%?
+    - is it possible to get a scholarship up to 70%?
+    - can I receive a 70% tuition waiver?
+    - what’s the top financial aid I can benefit from?
+    - what is the percentage of the aid package?
+    - is there any aid package?
+    - are there any financial aid?
+    - social aid?
+    - financial aid?
+    - discount?
+    - social discount?
+- intent: ask_instructors
+  examples: |
+    - who are the instructors in the program?
+    - can you tell me about the professors?
+    - do you know the instructors?
+    - who teaches the AI Master?
+    - which professors are involved in this program?
+    - who are the faculty members?
+    - who is teaching this course?
+    - can you list the instructors?
+    - who are the teachers in the master?
+    - who leads the courses?
+    - which experts are delivering the lectures?
+    - instructors?
+- intent: ask_about_summer
+  examples: |
+    - does the program include summer classes?
+    - do we study during the summer?
+    - are there any summer semesters?
+    - is the summer included in the master?
+    - do we have summer vacation?
+    - will I have time off during summer?
+    - is there teaching in summer?
+    - are there summer sessions?
+    - do we continue courses in July and August?
+    - do we have classes in summer or not?
+    - is the summer break part of the program?
+    - summer?
+    - is there summer?
+- intent: ask_job_opportunities
+  examples: |
+    - what jobs can I do after this master?
+    - what are the job opportunities after graduating?
+    - what careers can I follow after the program?
+    - will I find a job easily after this master?
+    - what roles can I apply for after graduation?
+    - what can I do professionally after finishing?
+    - what kind of job can I expect after completing the program?
+    - are there many career opportunities in AI?
+    - what are my prospects after this master?
+    - does this master help me get a job in AI?
+    - can I work in data science after this master?
+    - jobs?
+    - what jobs can we then find?
+    - job opportunities?
+- intent: ask_thesis_and_research
+  examples: |
+    - Does the program include a thesis?
+    - Will I have to do a research project?
+    - Is there a final year thesis in this master's?
+    - What about research opportunities?
+    - Can I publish my thesis?
+    - Do I need to do a research paper?
+    - Tell me more about the thesis part.
+    - Can you tell me about the faculty members involved in the AI program? What are their research interests?
+    - Are there opportunities to get involved in faculty research projects?
+    - What are some of the key research areas or labs within the AI department?
+    - Is the research thesis mandatory or optional?
+    - Can I work on an applied AI research project with a company?
+    - Is there support for publishing papers or attending conferences?
+    - What kind of topics can we choose for the thesis?
+    - Can I collaborate with a professor on a research paper?
+    - research?
+    - thesis?
+    - is there a required thesis to do?
+    - is there a required research to do?
+- intent: ask_program_format
+  examples: |
+    - Is the program offered online, in-person, or in a hybrid format?
+    - Can I take the program online?
+    - Is the AI master hybrid or on-campus?
+    - Do I need to attend classes in person?
+    - Is there an online version of the program?
+    - Is the AI Master's program fully online?
+    - Can I attend remotely?
+    - Is it available as distance learning?
+    - Is physical attendance required for this master's program?
+    - Does the university offer this AI program in hybrid mode?
+    - Can I join the program from abroad without being on campus?
+    - Is there any flexibility between online and on-site learning?
+    - Can I take some courses online and others on campus?
+    - online program?
+    - online master?
+    - onsite program?
+    - onsite master?
+    - online learning?
+    - hybrid classes?
+    - online classes?
+- synonym: deep learning
+  examples: |
+    - dl
+    - deeplearn
+    - deep-learning
+    - deep learn
+    - DL
+- lookup: course_name
+  examples: |
+    - machine learning
+    - deep learning
+    - DL
+    - data mining
+    - nlp
+    - natural language processing
+    - computer vision
+    - reinforcement learning
+    - rl
+    - optimisation for ai
+    - game theory
+    - ML
+    - decision modeling
+- lookup: first_name
+  examples: |
+    - hadi 
+    - aya  
+    - fatima 
+    - jad 
+    - lina 
+    - elie 
+    - omar 
+    - lynn
+    - mohamad 
+    - jean 
+    - pierre 

@@ -1,0 +1,10 @@
+[
+  {
+    "name": "course_name",
+    "pattern": "(\\bmachine\\ learning\\b|\\bdeep\\ learning\\b|\\bDL\\b|\\bdata\\ mining\\b|\\bnlp\\b|\\bnatural\\ language\\ processing\\b|\\bcomputer\\ vision\\b|\\breinforcement\\ learning\\b|\\brl\\b|\\boptimisation\\ for\\ ai\\b|\\bgame\\ theory\\b|\\bML\\b|\\bdecision\\ modeling\\b)"
+  },
+  {
+    "name": "full_name",
+    "pattern": "(\\bhadi\\ cheayto\\b|\\baya\\ ali\\ mohamad\\b|\\bfatima\\ khalil\\b|\\bjad\\ nasrallah\\b|\\blina\\ rizk\\b|\\belie\\ hanna\\b|\\bomar\\ daher\\b|\\blynn\\ el\\ moussaoui\\b|\\bmohamad\\ ali\\b|\\bjean\\ marie\\b|\\bpierre\\ abi\\ ramy\\b)"
+  }
+]

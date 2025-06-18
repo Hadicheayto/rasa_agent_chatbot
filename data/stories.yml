@@ -1,0 +1,150 @@
+# Create Sample Conversations
+version: "3.1"
+
+stories:
+
+- story: greet
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- story: goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: ask about program duration
+  steps:
+  - intent: ask_duration
+  - action: utter_ask_duration
+
+- story: ask about semesters
+  steps:
+  - intent: ask_semesters
+  - action: utter_ask_semesters
+
+- story: ask about credits
+  steps:
+  - intent: ask_credits
+  - action: utter_ask_credits
+
+- story: ask about courses
+  steps:
+  - intent: ask_courses
+  - action: utter_ask_courses
+
+- story: ask about admission requirements
+  steps:
+  - intent: ask_admission
+  - action: utter_ask_admission
+
+- story: ask about price
+  steps:
+  - intent: ask_price
+  - action: utter_ask_price
+
+- story: Ask price and positive reaction
+  steps:
+    - intent: ask_price
+    - action: utter_ask_price
+    - intent: positive_reaction
+    - action: utter_happy_response
+
+- story: Ask price and negative reaction
+  steps:
+    - intent: ask_price
+    - action: utter_ask_price
+    - intent: negative_reaction
+    - action: utter_aid_info
+
+- story: ask about internship
+  steps:
+  - intent: ask_internship
+  - action: utter_ask_internship  
+
+- story: ask about language of instruction
+  steps:
+  - intent: ask_language_of_instruction
+  - action: utter_ask_language_of_instruction  
+
+- story: ask about application deadlines
+  steps:
+  - intent: ask_application_deadlines
+  - action: utter_ask_application_deadlines
+
+- story: ask about class schedule
+  steps:
+  - intent: ask_class_schedule
+  - action: utter_ask_class_schedule  
+
+- story: ask about campus location
+  steps:
+  - intent: ask_campus_location
+  - action: utter_ask_campus_location  
+
+- story: ask about program summary
+  steps:
+  - intent: ask_program_summary
+  - action: utter_ask_program_summary  
+
+- story: Ask about financial aid percentage
+  steps:
+    - intent: ask_financial_aid_percentage
+    - action: utter_ask_financial_aid_percentage
+
+- story: Ask about instructors
+  steps:
+    - intent: ask_instructors
+    - action: utter_ask_instructors
+
+- story: Ask about job opportunities
+  steps:
+    - intent: ask_job_opportunities
+    - action: utter_ask_job_opportunities
+
+- story: Ask about summer inclusion
+  steps:
+    - intent: ask_about_summer
+    - action: utter_ask_about_summer
+
+- story: ask about thesis and research
+  steps:
+    - intent: ask_thesis_and_research
+    - action: utter_ask_thesis_and_research
+
+- story: ask about program format
+  steps:
+  - intent: ask_program_format
+  - action: utter_ask_program_format
+
+
+
+
+
+- story: interactive_story_1
+  steps:
+  - intent: Register_now
+  - action: simple_form
+  - active_loop: simple_form
+  - slot_was_set:
+    - requested_slot: first_name
+  - intent: inform
+    entities:
+    - first_name: mohamad salah
+    - first_name: salah
+  - slot_was_set:
+    - first_name: salah
+  - action: simple_form
+  - slot_was_set:
+    - requested_slot: email
+  - intent: inform
+    entities:
+    - email: mohamad@gmail.com
+    - email: mohamad@gmail.com
+  - slot_was_set:
+    - email: mohamad@gmail.com
+  - action: simple_form
+  - slot_was_set:
+    - requested_slot: null
+  - active_loop: null
+  - action: action_say_data

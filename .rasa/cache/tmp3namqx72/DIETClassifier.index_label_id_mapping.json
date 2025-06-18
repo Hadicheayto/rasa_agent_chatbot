@@ -1,0 +1,22 @@
+{
+  "0": "Register now",
+  "1": "ask_admission",
+  "2": "ask_application_deadlines",
+  "3": "ask_campus_location",
+  "4": "ask_class_schedule",
+  "5": "ask_course_details",
+  "6": "ask_courses",
+  "7": "ask_credits",
+  "8": "ask_duration",
+  "9": "ask_internship",
+  "10": "ask_language_of_instruction",
+  "11": "ask_price",
+  "12": "ask_program_format",
+  "13": "ask_program_summary",
+  "14": "ask_semesters",
+  "15": "bot_challenge",
+  "16": "goodbye",
+  "17": "greet",
+  "18": "negative_reaction",
+  "19": "positive_reaction"
+}

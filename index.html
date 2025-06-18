@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rasa Chat Widget Example</title>
+
+  <!-- Load Rasa Chat Widget JavaScript module -->
+  <script
+    type="module"
+    src="https://unpkg.com/@rasahq/chat-widget-ui/dist/rasa-chatwidget/rasa-chatwidget.esm.js"
+  ></script>
+
+  <!-- Load Rasa Chat Widget CSS -->
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/@rasahq/chat-widget-ui/dist/rasa-chatwidget/rasa-chatwidget.css"
+  />
+</head>
+<body>
+
+  <!-- Rasa Chat Widget -->
+  <rasa-chatbot-widget server-url="http://localhost:5005" socket-path="/socket.io/"></rasa-chatbot-widget>
+
+</body>
+</html>
