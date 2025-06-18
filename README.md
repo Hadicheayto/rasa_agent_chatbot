@@ -44,7 +44,7 @@ pipeline:
   - name: FallbackClassifier
     threshold: 0.4
     ambiguity_threshold: 0.1
-
+```yaml
 
 ## 🔌 Integrations
 
