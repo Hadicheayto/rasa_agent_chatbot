@@ -44,3 +44,24 @@ pipeline:
   - name: FallbackClassifier
     threshold: 0.4
     ambiguity_threshold: 0.1
+
+
+### 🔌 Integrations
+
+This chatbot is integrated with two key communication channels to ensure wide accessibility and real-time interaction:
+
+#### ✅ Twilio WhatsApp Integration
+The assistant is connected to WhatsApp via Twilio, allowing users to chat directly with the bot through their mobile devices. This provides a convenient and instant messaging experience for prospective students who prefer using WhatsApp.
+
+- Real-time messaging
+- Message delivery reports
+- WhatsApp-approved chatbot compliance
+
+#### ✅ Web Chat Widget using Socket.IO
+A custom web-based chat widget is embedded on the university's website using `rasa-webchat`, which communicates with the bot via `Socket.IO`. This allows students to ask questions directly through the site without needing any external app.
+
+- Lightweight and responsive widget
+- Real-time communication with the Rasa backend
+- Customizable UI and branding
+
+These integrations ensure the assistant is available both on mobile and desktop platforms, improving accessibility and user engagement.
